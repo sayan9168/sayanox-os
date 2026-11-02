@@ -7,7 +7,7 @@
 ## Vision
 
 - **Kernel**: Linux
-- **Base**: Minimal Debian (debootstrap)
+- **Base**: Minimal Debian 13 "trixie" (mmdebstrap bootstrap)
 - **Soul**: Sayanox language deeply integrated into userspace
 - **Identity**: Not just another distro — a system where Sayanox is the primary way to build and control the OS
 
@@ -38,7 +38,7 @@
 ## Current Status
 
 - [x] Repository created
-- [ ] Phase 1: Minimal Debian base setup scripts
+- [ ] Phase 0: mmdebstrap minbase Trixie rootfs + QEMU boot (build/00-debootstrap.sh)
 - [ ] Phase 2: Sayanox toolchain integration
 - [ ] Phase 3: Core utilities & branding
 - [ ] Phase 4: Package system + Flatpak support
