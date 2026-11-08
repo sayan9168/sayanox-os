@@ -38,7 +38,8 @@
 ## Current Status
 
 - [x] Repository created
-- [ ] Phase 0: mmdebstrap minbase Trixie rootfs + QEMU boot (build/00-debootstrap.sh) — written, on branch, unmerged
+- [x] Phase 0: mmdebstrap minbase Trixie rootfs + QEMU boot (build/00-debootstrap.sh) — merged on `arena/f8d691f5-sayanox-os`
+- [ ] Phase 1: Branding + live ISO — in progress (overlay/, build/10-branding.sh, build/20-iso.sh)
 
 ## Roadmap (plan of record, 6 phases)
 
@@ -53,6 +54,7 @@
 
 Base Debian 13 "trixie" (not LFS, not Arch) · mmdebstrap (not debootstrap) · x86_64 only first · KDE Plasma 6 · Calamares · `.deb` only, never a new package format · `ID_LIKE=debian` mandatory · never fork Debian's repos · no Debian trademarks · every `sayanox-*` user-facing tool written in `.sa`, zero Python/bash.
 
+- [ ] Phase 1: Branding + live ISO (ইন-প্রgress — build/10-branding.sh, build/20-iso.sh, overlay branding)
 - [ ] Phase 2: Sayanox toolchain integration
 - [ ] Phase 3: Core utilities & branding
 - [ ] Phase 4: Package system + Flatpak support
@@ -63,14 +65,21 @@ Base Debian 13 "trixie" (not LFS, not Arch) · mmdebstrap (not debootstrap) · x
 sayanox-os/
 ├── README.md
 ├── docs/
-│   ├── ROADMAP.md
 │   ├── ARCHITECTURE.md
-│   └── DESIGN.md
-├── scripts/
-│   └── (build & bootstrap scripts)
+│   ├── DESIGN.md
+│   └── ROADMAP.md
+├── build/
+│   ├── 00-debootstrap.sh   # Phase 0 — mmdebstrap rootfs
+│   ├── 10-branding.sh      # Phase 1 — branding (locales, plymouth, GRUB, SDDM)
+│   └── 20-iso.sh           # Phase 1 — squashfs + GRUB → ISO
+├── overlay/
+│   ├── etc/...             # rootfs overlay (os-release, issue, hostname, locale, …)
+│   ├── boot/grub/themes/sayanox/   # GRUB theme + wallpaper
+│   └── usr/share/plymouth/themes/sayanox/   # Plymouth splash
 ├── branding/
-└── sayanox/
-    └── (integration related files)
+│   └── sayanox-wallpaper.png
+├── packages/               # Phase 2+ (planned: .deb lists for sayanox-* tools)
+└── installer/              # Phase 3 (Calamares branding, planned)
 ```
 
 ## Related Projects

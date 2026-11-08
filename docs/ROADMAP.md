@@ -12,16 +12,17 @@
 
 ---
 
-## Phase 0 (সপ্তাহ ১–২) — এখন চলছে
-[r ] রেপো লেআউট: build/, overlay/, packages/, installer/, live/, docs/
-[ ] build/00-debootstrap.sh — mmdebstrap দিয়ে trixie minbase রুটফাইলসিস্টেম (x86_64)
-[ ] রুটফাইলসিস্টেম কিউইএমে বুট টেস্ট → sayanox-0.0.1-bootable
+## Phase 0 (সপ্তাহ ১–২) — সম্পন্ন (arena/f8d691f5-sayanox-os-এ মার্জড)
+[x] রেপো লেআউট: build/, overlay/, docs/
+[x] build/00-debootstrap.sh — mmdebstrap দিয়ে trixie minbase রুটফাইলসিস্টেম (x86_64)
+[ ] রুটফাইলসিস্টেম কিউইএমে বুট টেস্ট → sayanox-0.0.1-bootable (বিল্ড হোস্টে চালু করতে হবে)
 
-## Phase 1 (সপ্তাহ ২–৪) — ব্র্যান্ডিং + লাইভ আইএসও
-[ ] /etc/os-release, /etc/issue (Sayanox OS, ID_LIKE=debian)
-[ ] GRUB থিম + পlymouth স্প্ল্যাশ, Bengali ফন্ট (fonts-noto-bengali)
-[ ] লোকেল bn_IN.UTF-8 + en_US.UTF-8, ডিসপ্লে ম্যানেজার
-[ ] squashfs + GRUB → sayanox-0.0.1.iso বুট
+## Phase 1 (সপ্তাহ ২–৪) — ব্র্যান্ডিং + লাইভ আইএসও (চালু / ইন-প্রগ্রেস)
+[x] /etc/os-release, /etc/issue (Sayanox OS, ID_LIKE=debian) — overlay/etc/
+[x] লোকেল bn_IN.UTF-8 + en_US.UTF-8, ডিসপ্লে ম্যানেজার (sddm) — overlay/etc/, build/10-branding.sh
+[x] GRUB থিম + পlymouth স্প্ল্যাশ, বাংলা ফন্ট (fonts-noto-bengali) — overlay + branding/
+[ ] squashfs + GRUB → sayanox-0.0.1.iso বুট — build/20-iso.sh লিখা হয়েছে, বিল্ড হোস্টে রান বাকি
+[ ] মাইলস্টোন: sayanox-0.0.1-iso
 
 ## Phase 2 (মাস ১–২) — পরিচয় স্তর (সর্বাধিক গুরুত্বপূর্ণ)
 [ ] sx as .deb at /usr/bin/sx + stdlib at /usr/lib/sayanox/stdlib

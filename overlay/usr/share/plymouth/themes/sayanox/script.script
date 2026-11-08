@@ -1,0 +1,10 @@
+// Sayanox OS Plymouth splash script (পর্ব ১: ব্যান্ডিং)
+// স্টার্টার thèmes — রঙ ও লোগো পরে toege করা যাবে
+
+if (plymouth.booting) {
+    var background = new Sprite();
+    background.SetColor(30, 42, 56);
+    background.SetPosition(0, 0);
+    background.SetSize(Window.GetWidth(), Window.GetHeight());
+    background.Opacity = 1.0;
+}
