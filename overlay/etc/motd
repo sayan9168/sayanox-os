@@ -1,0 +1,14 @@
+Welcome to Sayanox OS
+====================
+A Linux-based operating system where the Sayanox programming language
+is a first-class citizen.
+
+  Base:   Debian 13 "trixie" minbase (mmdebstrap)
+  Arch:   x86_64
+  Locale: en_US.UTF-8 (all-English at boot)
+  Format: .deb only
+
+Documentation: https://github.com/sayan9168/sayanox-os
+Issues:      https://github.com/sayan9168/sayanox-os/issues
+
+Sayanox is not Debian. Debian trademarks are not used.

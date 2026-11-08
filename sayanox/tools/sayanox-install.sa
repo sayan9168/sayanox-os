@@ -1,0 +1,11 @@
+// sayanox/tools/sayanox-install.sa — package/system install helper
+// Phase 2 stub — replace with real Sayanox language implementation
+// Installed as: /usr/bin/sayanox-install (.deb package: sayanox-install)
+
+tool sayanox-install {
+    // TODO: wrap apt/dpkg for installing Sayanox .deb packages
+    // Only .deb format — no new package format.
+    //
+    // For now this is a placeholder. See sayanox/README.md.
+    print("sayanox-install: Phase 2 stub, not yet implemented")
+}

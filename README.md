@@ -78,8 +78,22 @@ sayanox-os/
 │   └── usr/share/plymouth/themes/sayanox/   # Plymouth splash
 ├── branding/
 │   └── sayanox-wallpaper.png
-├── packages/               # Phase 2+ (planned: .deb lists for sayanox-* tools)
-└── installer/              # Phase 3 (Calamares branding, planned)
+├── packages/               # Phase 2+ (.deb lists for sayanox-* tools)
+│   └── manifest.txt
+├── sayanox/                # Phase 2 (sayanox-* tools written in .sa)
+│   ├── README.md
+│   └── tools/
+│       ├── sx.sa
+│       ├── sayanox-fetch.sa
+│       ├── sayanox-welcome.sa
+│       ├── sayanox-install.sa
+│       ├── sayanox-update.sa
+│       ├── sayanox-doctor.sa
+│       ├── sayanox-backup.sa
+│       └── sayanox-driver.sa
+├── installer/              # Phase 3 (Calamares branding, planned)
+│   └── README.md
+└── LICENSE, CONTRIBUTING.md
 ```
 
 ## Related Projects

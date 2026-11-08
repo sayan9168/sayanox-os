@@ -1,0 +1,10 @@
+// sayanox/tools/sayanox-update.sa — system update helper
+// Phase 2 stub — replace with real Sayanox language implementation
+// Installed as: /usr/bin/sayanox-update (.deb package: sayanox-update)
+
+tool sayanox-update {
+    // TODO: update package lists and upgrade installed .deb packages
+    //
+    // For now this is a placeholder. See sayanox/README.md.
+    print("sayanox-update: Phase 2 stub, not yet implemented")
+}

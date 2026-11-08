@@ -1,0 +1,11 @@
+// sayanox/tools/sayanox-fetch.sa — system information fetcher
+// Phase 2 stub — replace with real Sayanox language implementation
+// Installed as: /usr/bin/sayanox-fetch (.deb package: sayanox-fetch)
+
+tool sayanox-fetch {
+    // TODO: gather and display OS, kernel, uptime, shell, packages, etc.
+    // Output should match Sayanox OS branding (English, all caps header).
+    //
+    // For now this is a placeholder. See sayanox/README.md.
+    print("sayanox-fetch: Phase 2 stub, not yet implemented")
+}

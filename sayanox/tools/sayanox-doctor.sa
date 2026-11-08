@@ -1,0 +1,11 @@
+// sayanox/tools/sayanox-doctor.sa — system diagnostics / self-check
+// Phase 2 stub — replace with real Sayanox language implementation
+// Installed as: /usr/bin/sayanox-doctor (.deb package: sayanox-doctor)
+
+tool sayanox-doctor {
+    // TODO: check rootfs, locales, bootloader, network, sayanox stdlib
+    // Report problems and suggest fixes.
+    //
+    // For now this is a placeholder. See sayanox/README.md.
+    print("sayanox-doctor: Phase 2 stub, not yet implemented")
+}

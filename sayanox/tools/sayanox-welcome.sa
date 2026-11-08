@@ -1,0 +1,11 @@
+// sayanox/tools/sayanox-welcome.sa — first-boot welcome screen
+// Phase 2 stub — replace with real Sayanox language implementation
+// Installed as: /usr/bin/sayanox-welcome (.deb package: sayanox-welcome)
+
+tool sayanox-welcome {
+    // TODO: show welcome message, locale/keyboard choice, docs links
+    // All text in English at boot (en_US.UTF-8 default).
+    //
+    // For now this is a placeholder. See sayanox/README.md.
+    print("sayanox-welcome: Phase 2 stub, not yet implemented")
+}
