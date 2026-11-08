@@ -1,5 +1,5 @@
-# Sayanox OS — GRUB themes (পর্ব ১: ব্যান্ডিং)
-# 월পেপার একই ফোল্ডারে থাকবে: wallpaper.png
+# Sayanox OS — GRUB theme (Phase 1: branding)
+# Wallpaper is in the same folder: wallpaper.png
 
 desktop-image = "wallpaper.png"
 

@@ -1,5 +1,5 @@
-// Sayanox OS Plymouth splash script (পর্ব ১: ব্যান্ডিং)
-// স্টার্টার thèmes — রঙ ও লোগো পরে toege করা যাবে
+// Sayanox OS Plymouth splash script (Phase 1: branding)
+// Starter theme — colors and logo can be added later
 
 if (plymouth.booting) {
     var background = new Sprite();

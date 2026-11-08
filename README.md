@@ -54,7 +54,7 @@
 
 Base Debian 13 "trixie" (not LFS, not Arch) · mmdebstrap (not debootstrap) · x86_64 only first · KDE Plasma 6 · Calamares · `.deb` only, never a new package format · `ID_LIKE=debian` mandatory · never fork Debian's repos · no Debian trademarks · every `sayanox-*` user-facing tool written in `.sa`, zero Python/bash.
 
-- [ ] Phase 1: Branding + live ISO (ইন-প্রgress — build/10-branding.sh, build/20-iso.sh, overlay branding)
+- [ ] Phase 1: Branding + live ISO — in progress (overlay/, build/10-branding.sh, build/20-iso.sh)
 - [ ] Phase 2: Sayanox toolchain integration
 - [ ] Phase 3: Core utilities & branding
 - [ ] Phase 4: Package system + Flatpak support
