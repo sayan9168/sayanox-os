@@ -1,10 +1,9 @@
-# Sayanox OS লোকেল সেটিংস (পর্ব ১: ব্যান্ডিং)
-# ডিফল্ট সিস্টেম লোকেল: en_US.UTF-8
-# বাংলা (বাংলাদেশ) সংখ্যা, সময়, মুদ্রা, কাগজের সাইজের জন্য
+# Sayanox OS locale settings (Phase 1: branding)
+# Default system locale: en_US.UTF-8 (everything in English at boot)
 LANG=en_US.UTF-8
-LANGUAGE=en_US:bn_IN:en
-LC_NUMERIC=bn_IN.UTF-8
-LC_TIME=bn_IN.UTF-8
-LC_MONETARY=bn_IN.UTF-8
-LC_PAPER=bn_IN.UTF-8
-LC_MEASUREMENT=bn_IN.UTF-8
+LANGUAGE=en_US:en
+LC_NUMERIC=en_US.UTF-8
+LC_TIME=en_US.UTF-8
+LC_MONETARY=en_US.UTF-8
+LC_PAPER=en_US.UTF-8
+LC_MEASUREMENT=en_US.UTF-8

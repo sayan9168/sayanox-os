@@ -19,7 +19,7 @@
 
 ## Phase 1 (সপ্তাহ ২–৪) — ব্র্যান্ডিং + লাইভ আইএসও (চালু / ইন-প্রগ্রেস)
 [x] /etc/os-release, /etc/issue (Sayanox OS, ID_LIKE=debian) — overlay/etc/
-[x] লোকেল bn_IN.UTF-8 + en_US.UTF-8, ডিসপ্লে ম্যানেজার (sddm) — overlay/etc/, build/10-branding.sh
+[x] লোকেল en_US.UTF-8 (all-English default at boot), ডিসপ্লে ম্যানেজার (sddm) — overlay/etc/, build/10-branding.sh
 [x] GRUB থিম + পlymouth স্প্ল্যাশ, বাংলা ফন্ট (fonts-noto-bengali) — overlay + branding/
 [ ] squashfs + GRUB → sayanox-0.0.1.iso বুট — build/20-iso.sh লিখা হয়েছে, বিল্ড হোস্টে রান বাকি
 [ ] মাইলস্টোন: sayanox-0.0.1-iso

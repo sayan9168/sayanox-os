@@ -1,4 +1,4 @@
-# Sayanox OS GRUB ডিফল্ট (পর্ব ১: ব্যান্ডিং)
+# Sayanox OS GRUB defaults (Phase 1: branding)
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR="Sayanox"

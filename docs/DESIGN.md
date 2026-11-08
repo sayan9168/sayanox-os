@@ -37,9 +37,9 @@ Each `build/*.sh` script takes a single subcommand and requires a Debian 13 host
 
 ## 5. Localization
 
-- `en_US.UTF-8` — system default (`LANG`)
-- `bn_IN.UTF-8` — Bengali (Bangladesh) for numbers, time, money, paper
-- Font: `fonts-noto-bengali`
+- `en_US.UTF-8` — system default (`LANG`); everything in English at boot
+- `bn_IN.UTF-8` — available but not default (Bangla kept only as an optional locale)
+- Font: `fonts-noto-bengali` (installed, not forced)
 
 ## 6. Boot & Branding
 
