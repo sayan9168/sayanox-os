@@ -1,0 +1,19 @@
+// packages/sxpkg/sxpkg.sa — sxpkg package manager frontend
+// Phase 4 stub — replace with real Sayanox language implementation
+// Installed as: /usr/bin/sxpkg (.deb package: sxpkg)
+
+tool sxpkg {
+    // TODO: implement package management frontend
+    // Commands (conceptual):
+    //   sxpkg install <pkg>
+    //   sxpkg update
+    //   sxpkg upgrade
+    //   sxpkg remove <pkg>
+    //   sxpkg search <query>
+    //
+    // Only .deb packages — never a new package format.
+    // Consumes Debian repositories (never forked).
+    //
+    // For now this is a placeholder. See packages/sxpkg/README.md.
+    print("sxpkg: Phase 4 stub, not yet implemented")
+}

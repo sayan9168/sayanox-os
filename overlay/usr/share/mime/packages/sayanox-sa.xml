@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <mime-type type="text/x-sayanox">
+    <comment>Sayanox language source file</comment>
+    <comment xml:lang="en_US">Sayanox language source file</comment>
+    <glob pattern="*.sa"/>
+    <glob pattern="*.sayanox"/>
+    <icon name="text-x-sayanox"/>
+  </mime-type>
+</mime-info>
