@@ -1,0 +1,21 @@
+# packages/manifest.txt — Sayanox OS Phase 2 package manifest
+#
+# All packages are .deb format (no new package format).
+# Installed into the rootfs during Phase 2 (identity layer).
+#
+# Format: <package-name> <version> <section> <priority> <description>
+
+sayanox-sx 0.1.0-alpha utils optional "Sayanox OS main CLI entrypoint (/usr/bin/sx)"
+sayanox-fetch 0.1.0-alpha utils optional "System information fetcher"
+sayanox-welcome 0.1.0-alpha utils optional "First-boot welcome screen"
+sayanox-install 0.1.0-alpha utils optional "Package/system install helper"
+sayanox-update 0.1.0-alpha utils optional "System update helper"
+sayanox-doctor 0.1.0-alpha utils optional "System diagnostics / self-check"
+sayanox-backup 0.1.0-alpha utils optional "System backup/restore helper"
+sayanox-driver 0.1.0-alpha utils optional "Hardware driver management"
+
+# Stdlib (shared by all sayanox-* tools)
+sayanox-stdlib 0.1.0-alpha libs optional "Sayanox standard library (/usr/lib/sayanox/stdlib)"
+
+# Build-time dependencies (from Debian trixie, not forked)
+# mmdebstrap, locales, fonts-noto-bengali, plymouth, sddm, grub-pc, linux-image-amd64

@@ -1,0 +1,15 @@
+# Sayanox OS — GRUB theme (Phase 1: branding)
+# Wallpaper is in the same folder: wallpaper.png
+
+desktop-image = "wallpaper.png"
+
++ label {
+    text = "Sayanox OS"
+    font = "DejaVu Sans"
+    size = 32
+    color = "#FFFFFF"
+    top = 15%
+    left = 10%
+    width = 40%
+    height = 6%
+}

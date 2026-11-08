@@ -1,0 +1,6 @@
+[Unit]
+Description=Sayanox OS target
+Documentation=man:sayanox.target(8)
+
+[Install]
+Alias=multi-user.target

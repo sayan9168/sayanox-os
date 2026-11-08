@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Sayanox OS
+Comment=Sayanox OS Plasma 6 global theme
+Icon=preferences-desktop-theme
+Type=Service
+X-Plasma-API=plasma-look-and-feel
+X-Plasma-Provides=org.kde.plasma.lookandfeel
+X-KDE-PluginInfo-Author=Sayan Mahata
+X-KDE-PluginInfo-Email=sayan9168@users.noreply.github.com
+X-KDE-PluginInfo-Name=sayanox-theme
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-Website=https://github.com/sayan9168/sayanox-os
+X-KDE-PluginInfo-License=MIT
+X-KDE-ServiceTypes=Plasma/LookAndFeel

@@ -1,0 +1,12 @@
+[Unit]
+Description=Sayanox OS system update
+Documentation=man:sayanox-update(8)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sayanox-update
+
+[Install]
+WantedBy=multi-user.target

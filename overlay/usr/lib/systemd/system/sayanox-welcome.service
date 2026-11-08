@@ -1,0 +1,11 @@
+[Unit]
+Description=Sayanox OS first-boot welcome screen
+Documentation=man:sayanox-welcome(8)
+ConditionPathExists=/run/sayanox/first-boot
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sayanox-welcome
+
+[Install]
+WantedBy=multi-user.target

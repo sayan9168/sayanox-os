@@ -1,0 +1,10 @@
+// sayanox/tools/sayanox-driver.sa — hardware driver management
+// Phase 2 stub — replace with real Sayanox language implementation
+// Installed as: /usr/bin/sayanox-driver (.deb package: sayanox-driver)
+
+tool sayanox-driver {
+    // TODO: list, install, remove hardware drivers (GPU, Wi-Fi, etc.)
+    //
+    // For now this is a placeholder. See sayanox/README.md.
+    print("sayanox-driver: Phase 2 stub, not yet implemented")
+}

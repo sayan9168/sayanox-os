@@ -1,0 +1,10 @@
+// Sayanox OS Plymouth splash script (Phase 1: branding)
+// Starter theme — colors and logo can be added later
+
+if (plymouth.booting) {
+    var background = new Sprite();
+    background.SetColor(30, 42, 56);
+    background.SetPosition(0, 0);
+    background.SetSize(Window.GetWidth(), Window.GetHeight());
+    background.Opacity = 1.0;
+}

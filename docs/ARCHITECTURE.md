@@ -2,7 +2,7 @@
 
 ## High-Level Design
 
-Sayanox OS is intentionally **not** a from-scratch kernel.  
+Sayanox OS is intentionally **not** a from-scratch kernel. 
 It uses the **Linux kernel** for hardware support and stability, while pushing uniqueness into the **userspace** through the Sayanox language.
 
 ### Layers
@@ -10,9 +10,10 @@ It uses the **Linux kernel** for hardware support and stability, while pushing u
 1. **Hardware**
 2. **Linux Kernel**
 3. **Minimal Debian Base** (glibc, FHS, apt/dpkg as temporary foundation)
-4. **Sayanox Runtime & Toolchain**
-5. **Sayanox-written system tools & services**
-6. **Applications** (native + Flatpak + AppImage)
+4. **Sayanox Runtime & Toolchain** (`.sa` language, stdlib at `/usr/lib/sayanox/stdlib`)
+5. **Sayanox-written system tools & services** (`sx`, `sayanox-fetch`, `sayanox-welcome`, `sayanox-install`, `sayanox-update`, `sayanox-doctor`, `sayanox-backup`, `sayanox-driver`)
+6. **Systemd services & targets** (`sayanox.target`, service units under `/usr/lib/systemd/system/`)
+7. **Applications** (native + Flatpak + AppImage)
 
 ## Design Principles
 
@@ -29,6 +30,7 @@ It uses the **Linux kernel** for hardware support and stability, while pushing u
 | Kernel                | Linux                   | Hardware support + stability                |
 | Base                  | Minimal Debian          | glibc + app compatibility + practical start |
 | Primary Language      | Sayanox                 | Project identity                            |
+| Service manager       | systemd                 | Debian default, well-supported              |
 | Package experience    | sxpkg (long-term)       | Native to Sayanox ecosystem                 |
 | App distribution      | Flatpak + AppImage      | Easy browser & desktop app support          |
 

@@ -1,0 +1,16 @@
+// sayanox/tools/sx.sa — Sayanox OS main CLI entrypoint
+// Phase 2 stub — replace with real Sayanox language implementation
+// Installed as: /usr/bin/sx (.deb package: sayanox-sx)
+
+tool sx {
+    // TODO: implement in Sayanox language
+    // Subcommands: fetch, welcome, install, update, doctor, backup, driver
+    //
+    // Example usage (conceptual):
+    //   sx fetch
+    //   sx welcome
+    //   sx install <pkg>
+    //
+    // For now this is a placeholder. See sayanox/README.md.
+    print("sx: Sayanox OS CLI — Phase 2 stub, not yet implemented")
+}

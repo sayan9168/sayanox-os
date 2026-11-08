@@ -1,0 +1,40 @@
+# Sayanox OS — .gitignore
+# Build artifacts and generated files (not committed to Git)
+
+# Build outputs
+rootfs/
+image/
+sayanox-0.0.1.iso
+sayanox-0.0.1.img
+
+# mmdebstrap / debootstrap caches
+*.deb
+*.buildinfo
+*.changes
+
+# QEMU / loop devices
+*.img
+*.qcow2
+*.vmdk
+
+# Temporary build directories
+/tmp/*
+*.tmp
+
+# OS-generated
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+
+# Node (if used later)
+node_modules/

@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Sayanox OS
+Description=Sayanox OS Plymouth splash screen (Phase 1: branding)
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/sayanox
+ScriptFile=script.script

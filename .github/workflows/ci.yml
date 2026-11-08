@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, arena/f8d691f5-sayanox-os ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate shell script syntax
+        run: |
+          bash -n build/00-debootstrap.sh
+          bash -n build/10-branding.sh
+          bash -n build/20-iso.sh
+
+      - name: Verify no Bengali remains in text files
+        run: |
+          python3 - <<'PY'
+          import re, os
+          bengali = re.compile(r'[\u0980-\u09FF]')
+          found = False
+          for root, dirs, files in os.walk('.'):
+              if '.git' in root: continue
+              for fn in files:
+                  p = os.path.join(root, fn)
+                  if fn.endswith('.png'): continue
+                  try:
+                      with open(p, 'r', encoding='utf-8', errors='ignore') as fh:
+                          content = fh.read()
+                      if bengali.search(content):
+                          print(f'BENGALI FOUND: {p}')
+                          found = True
+                  except Exception:
+                      pass
+          if found:
+              raise SystemExit(1)
+          print('OK: no Bengali in any text file')
+          PY
+
+      - name: Verify required files exist
+        run: |
+          test -f build/00-debootstrap.sh
+          test -f build/10-branding.sh
+          test -f build/20-iso.sh
+          test -f overlay/etc/os-release
+          test -f overlay/etc/issue
+          test -f LICENSE
+          test -f README.md

@@ -1,0 +1,10 @@
+// sayanox/tools/sayanox-backup.sa — system backup/restore helper
+// Phase 2 stub — replace with real Sayanox language implementation
+// Installed as: /usr/bin/sayanox-backup (.deb package: sayanox-backup)
+
+tool sayanox-backup {
+    // TODO: back up /etc, /var/lib/dpkg, user data; restore from backup
+    //
+    // For now this is a placeholder. See sayanox/README.md.
+    print("sayanox-backup: Phase 2 stub, not yet implemented")
+}
