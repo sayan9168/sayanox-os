@@ -1,0 +1,13 @@
+[Unit]
+Description=Sayanox OS system information fetch
+Documentation=man:sayanox-fetch(8)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sayanox-fetch
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

@@ -23,10 +23,13 @@ It complements `docs/ARCHITECTURE.md` (high-level layers) and `docs/ROADMAP.md` 
 
 ```
 rootfs/                 Phase 0 — mmdebstrap trixie minbase (build/00-debootstrap.sh)
-overlay/                Files copied on top of rootfs (branding, config)
+overlay/                Files copied on top of rootfs (branding, config, services)
 branding/               Wallpaper, themes, visual identity
+build/00-debootstrap.sh Phase 0 — rootfs + QEMU image
 build/10-branding.sh    Phase 1 — locales, plymouth, GRUB theme, SDDM, fonts
 build/20-iso.sh         Phase 1 — squashfs + GRUB → sayanox-0.0.1.iso
+Makefile                Build orchestrator (bootstrap, branding, iso, image, check, clean)
+.github/workflows/ci.yml CI — shell syntax validation, Bengali-free check
 ```
 
 Each `build/*.sh` script takes a single subcommand and requires a Debian 13 host with root/sudo. They are build definitions, not sandbox-executable.
@@ -47,6 +50,24 @@ Each `build/*.sh` script takes a single subcommand and requires a Debian 13 host
 - Plymouth theme: `usr/share/plymouth/themes/sayanox/`
 - SDDM theme config: `etc/sddm.conf.d/sayanox.conf`
 - KDE Plasma 6 global theme: Phase 2
+- MOTD: `etc/motd` — English welcome message at login
+- Issue: `etc/issue` / `etc/issue.net` — pre-login banner
+
+## 7. Systemd Services
+
+All Sayanox services are systemd units installed under `usr/lib/systemd/system/`:
+
+- `sayanox.target` — aliases `multi-user.target`
+- `sayanox-fetch.service` — oneshot, runs `/usr/bin/sayanox-fetch`
+- `sayanox-update.service` — oneshot, runs `/usr/bin/sayanox-update`
+- `sayanox-doctor.service` — oneshot, runs `/usr/bin/sayanox-doctor`
+- `sayanox-welcome.service` — oneshot, first-boot only (guarded by `/run/sayanox/first-boot`)
+
+## 8. APT Repository (Phase 2)
+
+`packages/repo/` — placeholder for `deb.sayanox.org` (aptly + gpg).
+Only `.deb` packages; never forks Debian repos.
+
 
 ## 7. Versioning
 

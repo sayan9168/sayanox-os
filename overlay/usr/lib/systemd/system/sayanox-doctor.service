@@ -1,0 +1,10 @@
+[Unit]
+Description=Sayanox OS system diagnostics
+Documentation=man:sayanox-doctor(8)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sayanox-doctor
+
+[Install]
+WantedBy=multi-user.target

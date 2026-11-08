@@ -93,7 +93,13 @@ sayanox-os/
 │       └── sayanox-driver.sa
 ├── installer/              # Phase 3 (Calamares branding, planned)
 │   └── README.md
-└── LICENSE, CONTRIBUTING.md
+├── packages/repo/          # Phase 2 APT repo placeholder (deb.sayanox.org)
+│   └── README.md
+├── .github/workflows/ci.yml    # CI: syntax validation + English-only check
+├── Makefile                    # Build orchestrator
+├── .gitignore                  # Build artifacts excluded
+├── LICENSE                     # MIT
+└── CONTRIBUTING.md
 ```
 
 ## Related Projects

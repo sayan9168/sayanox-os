@@ -62,3 +62,14 @@
 - Do not fork Debian repos; keep upstream archives intact
 - Do not ship x86_64 and arm64 together
 - No Firefox-on-own-kernel promises before community discussion
+
+---
+
+## Supporting artifacts (added)
+
+- `.gitignore` — build artifacts excluded from Git
+- `Makefile` — build orchestrator (bootstrap, branding, iso, image, check, clean)
+- `.github/workflows/ci.yml` — CI: shell syntax validation + Bengali-free text check
+- `overlay/usr/lib/systemd/system/*.service` — Sayanox systemd service stubs
+- `overlay/etc/motd`, `overlay/etc/issue.net` — English boot/banner messages
+- `packages/repo/` — Phase 2 APT repo placeholder (`deb.sayanox.org`)
